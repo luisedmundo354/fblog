@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>  
+<body>
+  <<h1>Home page</h1>
+  {% for post in posts%}
+      <h3>{% post.title %}</h3>
+      <p>By: {% post.author %}</p>
+      <p>{% post.content %}</p>
+      <P>{% post.date %}</P>
+  {% endfor%}
+</body>
+</html>
