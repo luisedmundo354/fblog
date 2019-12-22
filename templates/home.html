@@ -8,10 +8,10 @@
 <body>
   <<h1>Home page</h1>
   {% for post in posts %}
-      <h3>{{% post.title %}}</h3>
-      <p>By: {{% post.author %}}</p>
-      <p>{{% post.content %}}</p>
-      <P>{{% post.date %}}</P>
+      <h3>{{ post.title }}</h3>
+      <p>By: {{ post.author }}</p>
+      <p>{{ post.content }}</p>
+      <P>{{ post.date_posted }}</P>
   {% endfor %}
 </body>
 </html>
