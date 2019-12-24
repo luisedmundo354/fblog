@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+      <title>Flask blog - {{ title }}</title>
+  {% else %}
+      <title>Flask blog</title>
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>
