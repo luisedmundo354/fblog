@@ -3,6 +3,22 @@ body {
   margin: 0;
 }
 
+header nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav div a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav div.left {float: left;}
+
 header nav div.right {float: right;}
 
 @media screen and (max-width: 600px) {
