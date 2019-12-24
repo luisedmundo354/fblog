@@ -3,12 +3,16 @@ body {
   margin: 0;
 }
 
+container{
+  display: flex;  
+}
+
 nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  color: yellow;
+  backgrou
 }
 
 div.left a {
