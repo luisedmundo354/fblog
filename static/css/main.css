@@ -14,9 +14,18 @@ nav {
   overflow: hidden;
 }
 
+div.container div {
+  margin: 0 1em;
+}
+
 div.right {margin-left: auto;}
 
 @media screen and (max-width: 600px) {
   header nav div.right, 
   header nav div {float: none;}
+  
+  body {
+    font-size: 1.5em;
+  }
+  
 }
