@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Set the font --> 
+  <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  <!-- Set the main style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   {% if title %}
       <title>Flask blog - {{ title }}</title>
   {% else %}
       <title>Flask blog</title>
   {% endif %}
-  <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-  {% block content %}{% endblock %}
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="{{ url_for('/') }}">Flask blog</a>
+        <!-- NAv bar left side -->
+        <div class="left">
+          <a href="{{ url_for('home.html') }}">Home</a>
+          <a href="{{ url_for('about.html') }}">About</a>
+        </div>
+        <!-- Nav bar right side -->
+        <div class="right">
+          <a href="">Login</a>
+          <a href="">Register</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main -->
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {% block content %}{% endblock %}
+      </div>
+      <!--
+      <div class="col-md-4">
+        <div class="content-section">
+          <h3>Our Sidebar</h3>
+          <p class='text-muted'>You can put any information here you'd like.
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-light">Latest Posts</li>
+              <li class="list-group-item list-group-item-light">Announcements</li>
+              <li class="list-group-item list-group-item-light">Calendars</li>
+              <li class="list-group-item list-group-item-light">etc</li>
+            </ul>
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </main>
+  
 </body>
 </html>
