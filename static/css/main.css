@@ -14,13 +14,6 @@ nav {
   overflow: hidden;
 }
 
-div.left a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 div.right {margin-left: auto;}
 
 @media screen and (max-width: 600px) {
