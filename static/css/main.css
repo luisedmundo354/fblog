@@ -14,18 +14,29 @@ nav {
   overflow: hidden;
 }
 
-div.container div {
+div.container div.left, div.container div.navtitle {
   margin: 0 1em;
 }
 
-div.right {margin-left: auto;}
+div.right {
+  margin-left: auto;
+}
 
 @media screen and (max-width: 600px) {
-  header nav div.right, 
-  header nav div {float: none;}
   
-  body {
+  header nav div.right, header nav div {
+    float: none;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  p1 {
     font-size: 1.5em;
   }
   
+  nav a {
+    font-size: 1.5em;
+  }
 }
