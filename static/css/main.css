@@ -33,14 +33,23 @@ header a {
 }
 
 .sidebar li {
-  padding: 6px 8px 6px 16px;
+  padding: 1em 1em 2em 0;
   font-size: 1em;
   color: black;
   display: block;
 }
 
-.sidebar{
+.sidebar ul {
+  list-style-type: circle;
+}
+
+.sidebar {
   margin-left: auto;
+}
+
+.content-section {
+  border: 1px solid #dddddd;
+  padding: 1em;
 }
 
 .text-muted {
