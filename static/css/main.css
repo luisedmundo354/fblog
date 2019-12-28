@@ -1,69 +1,82 @@
+/*Main element styles*/
 body {
   font-family: 'VT323', monospace;
-  margin: 0;
+  margin: 0px 2em;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 header {
-  background-color: black;
+  background-color: white;
+  grid-column-start: l1;
+  grid-column-end: l4;
+  grid-row-start: 1;
+  grid-row-end: span 1;
 }
 
-.container {
-  display: flex;
-  padding: 20px 10px;
-}
-
-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-div.container div.left, div.container div.navtitle {
-  margin: 0 1em;
-}
-
-div.right {
-  margin-left: auto;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-}
-
-.sidebar li {
-  padding: 0 0 0.5px 0;
-  font-size: 1em;
-  color: black;
-  display: block;
+main {
+  grid-column: l1 / span 2;
+  grid-row: 2 / span 1;
 }
 
 .sidebar {
-  margin-left: auto;
+  grid-column: l3 / span 1;
+  gird-row: 2 / span 1;
 }
 
-.content-section {
-  border: 1px solid #dddddd;
-  padding: 1em;
+.footer {
+  grid-area: footer;
+  background: gray;
 }
 
-.text-muted {
-  color: gray;
+header a {
+  color: black;
+  text-decoration: none;
 }
 
+.content-box{
+  border:1px solid;
+  margin: 1em 0px;
+  padding: 0px 1em;
+}  
+
+.container {
+  display: grid;
+  grid-template-columns: [l1] 12.5% [l2] 50% [l3] 37.5% [l4];
+  grid-template-rows: 30px auto 100px;
+  grid-gap: 1em;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    "footer footer footer";
+}
+  
 @media screen and (max-width: 600px) {
   
   h1 {
     font-size: 2.5em;
   }
   
-  p {
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
     font-size: 1.5em;
   }
   
+  h4, h5 {
+    font-size: 1em;
+  }  
+  
+  p {
+    font-size: 1em;
+  }
+  
   header a {
-    font-size: 2em;
+    font-size: 1em;
   }
   
 }

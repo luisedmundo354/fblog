@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  padding: 5px 0px;
+  margin-right: 0em;
+}
+
+div.container div.left {
+  margin: 0 1em;
+}
+
+div.right {
+  margin-left: auto;
+  padding-right: 0em;
+}
+
+.content-section {
+  border: 1px solid #dddddd;
+  padding: 1em;
+}
+
+.text-muted {
+  color: gray;
+}

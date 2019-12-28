@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
   <!-- Set the main style -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  <link rel="stylesheet" href="http://maxbeier.github.io/tawian-frontend/tawian-frontend.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
   {% if title %}
       <title>Flask blog - {{ title }}</title>
   {% else %}
