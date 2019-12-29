@@ -2,10 +2,11 @@
 {% block content %}
   <h1>Home page</h1>
   {% for post in posts %}
-  <div class="content-box"></div>
+  <div class="content-box">
      <h3>{{ post.title }}</h3>
      <p>By: {{ post.author }}</p>
      <p>{{ post.content }}</p>
      <P>{{ post.date_posted }}</P>
+  </div>
   {% endfor %}
 {% endblock content %}

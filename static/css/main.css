@@ -23,7 +23,7 @@ main {
 
 .sidebar {
   grid-column: l3 / span 1;
-  gird-row: 2 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .footer {
@@ -44,13 +44,17 @@ header a {
 
 .container {
   display: grid;
-  grid-template-columns: [l1] 12.5% [l2] 50% [l3] 37.5% [l4];
+  grid-template-columns: [l1] 12.5% [l2] 50% [l3] 34% [l4];
   grid-template-rows: 30px auto 100px;
   grid-gap: 1em;
   grid-template-areas:
     ". . ."
     ". . ."
     "footer footer footer";
+}
+
+.text-muted {
+  color: gray;
 }
   
 @media screen and (max-width: 600px) {

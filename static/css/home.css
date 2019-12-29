@@ -15,9 +15,5 @@ div.right {
 
 .content-section {
   border: 1px solid #dddddd;
-  padding: 1em;
-}
-
-.text-muted {
-  color: gray;
+  padding: 0px 1em;
 }
